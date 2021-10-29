@@ -1,0 +1,104 @@
+<!doctype html>
+{% load static %}
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css.map' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css.map' %}">
+    <link rel="stylesheet" href="{% static 'css/pe-icon-7-stroke.min.css' %}" >
+    <link rel="stylesheet" href="{% static 'css/stylesheet.css' %}">
+
+</head>
+<body class="common-home">
+    <div id="top-menu">
+        <div class="container">
+            <div class="top-menu-wrapper">
+                <div id="selcity2">
+                    <div id="city-element" class="menu-left" style="tex-align:center;">
+                        <div id="city">
+                            <span class="pe-7s-map-marker"></span>
+                            <a class="city select" href="#">типо адрес</a>
+                        </div>
+                    </div>
+                </div>
+                <ul class="menu-right">
+                    <li>
+                        <div class="htime">
+                            "Самовывоз: "
+                            <i class="pe-7s-home"></i>
+                            <span class="hdate">Пн-Пт:</span>
+                            " 10:00-21:00 "
+                            <span class="hdate">Сб-Вс:</span>
+                            " 10:00-18:00 "
+                        </div>
+                    </li>
+                    <li>
+                       <div class="htime">
+                            "Колл-центер: "
+                            <i class="pe-7s-clock"></i>
+                            <span class="hdate">Пн-Пт:</span>
+                            " 9:00-21:00 "
+                            <span class="hdate">Сб-Вс:</span>
+                            " 9:00-20:00 "
+                        </div>
+                    </li>
+                    <li>
+                        <a href="tel:+7 495 662-77-77" onclick="window.dataLayer = window.dataLayer || [];dataLayer.push({'event':'call_button_click'});">
+                            <span class="pe-7s-call"></span>
+                            "+7 495 662-77-77"
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" onclick="order('','','callback');yaCounter1783105.reachGoal('callback'); window.dataLayer = window.dataLayer || [];dataLayer.push({'EventCategory':'UX','EventAction':'callback','EventLabel':'show-form','event':'GAevent'});">
+                            <span class="pe-7s-headphones"></span>
+                            " обратный звонок"
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="{% static 'img/Clip.png' %}" class="img-responsive" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+</body>
+</html>
