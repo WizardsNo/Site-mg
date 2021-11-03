@@ -66,6 +66,78 @@
                 </div>
             </div>
         </div>
+        <nav id="menu" class="navbar">
+            <div class="container">
+                <div class="menu-nav">
+                    <div id="logo">
+                        <div id="sidebar-btn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <a href="/"><img src="logo" alt="logo" title="logo" class="img-responsive"></a>
+                    </div>
+                    <div id="cart">
+                        <button type="button" data-toggle="dropdown" class="icon-btn-menu dropdown-toggle">
+                            <span class="pe-7s-cart pe-fix"></span>
+                            <i class="count" id="cart-total">0</i>
+                            <div class="text">Корзина</div>
+                        </button>
+                        <ul class="dropdown-menu pull-right" style="margin-left: -89.3438px;">
+                            <li>
+                                <p class="not-empty">В корзине пусто!</p>
+                            </li>
+                            <li>
+                                <p class="text-right">
+                                    <a class="btn main-btn pull-right" href="/basket.php">Перейти в корзину</a>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="menu_bottom">
+                        <div class="menu-right">
+                            <div class="dropdown">
+                                <button class="icon-btn-menu dropdown-toggle" id="lk" data-toggle="dropdown">
+                                    <span class="pe-7s-user pe-fix"></span>
+                                    <div class="text">Личный кабинет</div>
+                                </button>
+                                <div class="lk dropdown-menu" style="">
+                                    <ul class="list-unstyled">
+                                        <!--noindex-->
+                                        <li><a class="btn-link-drop" hashstring="f34bb62f734d1cecaa4de6a8b8efab52"
+                                               hashtype="href" href="/account/login">Авторизация</a></li>
+                                        <li><a class="btn-link-drop" hashstring="f34bb62f734d1cecaa4de6a8b8efab522"
+                                               hashtype="href" href="/account/register">Регистрация</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <button class="icon-btn-menu hidden-lg hidden-md hidden-sm" id="search-btn-mobile">
+                                <span class="pe-7s-search pe-fix"></span>
+                            </button>
+                            <a href="/compare" class="icon-btn-menu">
+                                <span class="pe-7s-repeat pe-fix"></span>
+                                <i id="compare-total" class="count">0</i>
+                                <div class="text">Сравнение</div>
+                            </a>
+                            <a href="/account/wishlist" id="wishlist-total" class="icon-btn-menu">
+                                <span class="pe-7s-like pe-fix"></span>
+                                <i class="count">0</i>
+                                <div class="text">Коллекция</div>
+                            </a>
+                        </div>
+                        <div id="search" class="">
+                            <form class="form-wrapper" action="/search.php" method="GET" id="search_form_new">
+                                <input type="text" name="search_1" id="search_box" value=""
+                                       placeholder="Поиск товара по каталогу" autocomplete="off" class="form-control">
+                                <button type="submit"><span class="pe-7s-search"></span></button>
+                            </form>
+                            <div id="search_advice_wrapper" style="display: none;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </div>
 </body>
 </html>

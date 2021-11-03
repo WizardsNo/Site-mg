@@ -1348,16 +1348,7 @@ a.city.select {font-size: 12px;}
 #top-menu .menu-left>li{margin-right:10px;}
 #top-menu .menu-right>li{margin-left:10px;}
 }
-@media(max-width:1300px){.wrapper{padding-left:0;}
-#sidebar-btn{display:none;}
-#sidebar-btn-mobile{display:block;}
-#sidebar{left:0;}
-.htime{font-size: 11px;}
-a.city.select {font-size: 11px;}
-#top-menu .menu-right a {font-size: 11px;}
-#top-menu a span {font-size: 15px;}
-.htime i {font-size: 15px;}
-}
+
 @media(max-width:1200px){body{padding-bottom:50px;padding-top:70px;}
 .online-help-box{color:#337ab7;height:50px;padding-left:34px;position:relative;margin-top:6px;}
 .online-help-box span{font-size:30px;position:absolute;left:2px;top:4px;}

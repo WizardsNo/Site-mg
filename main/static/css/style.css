@@ -5,23 +5,61 @@ body{
     overflow:auto;
 }
 a                       {   color:#23a1d1; -webkit-transition:0.3s all; -moz-transition:0.3s all;
-                            -ms-transition:0.3s all; -o-transition:0.3s all; transition:0.3s all; }
-a:hover                 {   text-decoration:none;   }
+                            -ms-transition:0.3s all; -o-transition:0.3s all; transition:0.3s all;       }
+a:hover                 {   text-decoration:none;                                                       }
 a.city.select           {   font-weight: bold;color: #FFFFFF; font-size: 12px;
-                            display: inline-block!important; padding: 12px 0; color: #222;  }
-.wrapper                {   position:relative; z-index:2;   }
+                            display: inline-block!important; padding: 12px 0; color: #222;              }
+.wrapper                {   position:relative; z-index:2;                                               }
 .htime                  {   padding:12px 0; display:block;font-size:13px; color:#222; font-weight:500;  }
-.htime i                {   font-size:20px; float:left; margin-right:5px;   }
+.htime i                {   font-size:20px; float:left; margin-right:5px;                               }
+#city                   {   display:inline-block; margin-left:0; font-weight:500; font-size:13px;       }
 #top-menu               {   margin-bottom:70px; background:#fbfbfb; position:relative;
-                            z-index:1002; border-bottom:1px solid #ebeced;  }
-.top-menu-wrapper       {   display:flex; justify-content:space-between;    }
+                            z-index:1002; border-bottom:1px solid #ebeced;                              }
+.top-menu-wrapper       {   display:flex; justify-content:space-between;                                }
 #top-menu .menu-right a {   padding:12px 0; display:block; font-size:13px; color:#222; font-weight:500; }
-#top-menu a:hover       {   color:#8a8a8a;  }
-#top-menu a span        {   font-size:20px; float:left; margin-right:5px;   }
+#top-menu a:hover       {   color:#8a8a8a;                                                              }
+#top-menu a span        {   font-size:20px; float:left; margin-right:5px;                               }
 #top-menu .menu-left,
-#top-menu .menu-right   {   list-style:none; padding:0; margin:0;   }
+#top-menu .menu-right   {   list-style:none; padding:0; margin:0;                                       }
 #top-menu .menu-left>li,
-#top-menu .menu-right>li{   float:left; }
+#top-menu .menu-right>li{   float:left;         }
 #top-menu .menu-left>li {   margin-right:19px;  }
 #top-menu .menu-right>li{   margin-left:19px;   }
-#city                   {   display:inline-block; margin-left:0; font-weight:500; font-size:13px;   }
+
+@media(max-width:1390px){
+.htime                  {   font-size: 12px;    }
+a.city.select           {   font-size: 12px;    }
+#top-menu .menu-right a {   font-size: 12px;    }
+#top-menu .menu-left>li {   margin-right:10px;  }
+#top-menu .menu-right>li{   margin-left:10px;   }
+}
+
+@media(max-width:1300px){
+.wrapper                {   padding-left:0;     }
+.htime                  {   font-size: 11px;    }
+a.city.select           {   font-size: 11px;    }
+#top-menu .menu-right a {   font-size: 11px;    }
+#top-menu a span        {   font-size: 15px;    }
+.htime i                {   font-size: 15px;    }
+}
+
+@media(max-width:1200px){
+.menu-right li > a:hover{   text-decoration:none; color:#fff!important; background:#6e419e;          }
+.nav > li > a           {   color:#222; padding:10px 15px; font-size:14px; font-family:'Ultima Pro';
+                            text-transform:uppercase; font-weight:800;                               }
+.nav > li > a i.fa      {   color:#2aad6f; font-size:26px; margin-right:9px; display:inline-block;   }
+.navbar-nav             {   margin:0; float:none;                                                    }
+.navbar-nav>li          {   float:none;                                                              }
+.htime                  {   padding:12px 0; display:block; font-size:16px;
+                            color:#222; font-weight:500; text-align:center;                          }
+.htime i                {   display:none;                                                            }
+}
+
+@media(max-width:767px){
+.menu-right>div, .menu-right>a,.menu-right>butto    {   position:relative; width:25%;                      }
+#logo                                               {   height:60px;width:64%;                             }
+.htime i                                            {   display:none;                                      }
+.htime                                              {   padding:2px 0; display:block; font-size:16px;
+                                                        color:#222; font-weight:500; text-align:center;    }
+#top-menu                                           {   display:none;                                      }
+}
