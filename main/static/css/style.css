@@ -1,3 +1,4 @@
+
 body{
     font-family:'Montserrat', sans-serif;
     font-weight:400;color:#313131;
@@ -25,7 +26,7 @@ a.city.select           {   font-weight: bold;color: #FFFFFF; font-size: 12px;
 #top-menu .menu-right>li{   float:left;         }
 #top-menu .menu-left>li {   margin-right:19px;  }
 #top-menu .menu-right>li{   margin-left:19px;   }
-
+/**/
 @media(max-width:1390px){
 .htime                  {   font-size: 12px;    }
 a.city.select           {   font-size: 12px;    }
