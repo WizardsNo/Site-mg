@@ -10,9 +10,10 @@
     <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
     <link rel="stylesheet" href="{% static 'css/bootstrap.css.map' %}">
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
-    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css.map' %}">
+    <link media="screen"   rel="stylesheet" href="{% static 'css/bootstrap.min.css.map' %}">
+    <link type="text/css"  rel="stylesheet" media="screen" href="{% static 'owl.carousel.min.css' %}">
     <link rel="stylesheet" href="{% static 'css/pe-icon-7-stroke.min.css' %}" >
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/stylesheet.css' %}">
 
 </head>
 <body class="common-home">
@@ -113,7 +114,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <button class="icon-btn-menu hidden-lg hidden-md hidden-sm" id="search-btn-mobile">
+                            <button class="icon-btn-menu d-xl-none d-xxl-none" id="search-btn-mobile">
                                 <span class="pe-7s-search pe-fix"></span>
                             </button>
                             <a href="/compare" class="icon-btn-menu">
@@ -127,13 +128,13 @@
                                 <div class="text">Коллекция</div>
                             </a>
                         </div>
-                        <div id="search" class="">
+                        <div id="search" class>
                             <form class="form-wrapper" action="/search.php" method="GET" id="search_form_new">
                                 <input type="text" name="search_1" id="search_box" value=""
                                        placeholder="Поиск товара по каталогу" autocomplete="off" class="form-control">
                                 <button type="submit"><span class="pe-7s-search"></span></button>
                             </form>
-                            <div id="search_advice_wrapper" style="display: none;"></div>
+                            <div id="search_advice_wrapper"></div>
                         </div>
                     </div>
                 </div>
