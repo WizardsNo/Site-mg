@@ -27,6 +27,13 @@ a.city.select           {   font-weight: bold;color: #FFFFFF; font-size: 12px;
 #top-menu .menu-left>li {   margin-right:19px;  }
 #top-menu .menu-right>li{   margin-left:19px;   }
 /**/
+.icon-btn-menu                          {   font-size:26px;color:#222;position:relative;display:flex;float:right;height:70px;padding:5px 15px;
+                                            background:none;border:none;align-items:center;border-left:1px solid#ebeced;text-decoration:none;}
+.icon-btn-menu .text                    {   font-size:13px;margin-left:14px;color: #222;font-weight: 500;}
+.icon-btn-menu .count                   {   background:#2aad6f;width:18px;height:18px;display:block;border-radius:50%;color:#fff;
+                                            font-size:10px;text-align:center;line-height:20px;position:absolute;top:17px;left:35px;font-style:inherit;
+                                            font-family: 'Montserrat', sans-serif;}
+.icon-btn-menu:hover                    {   background:#fbfbfb;}
 #cart                                   {   float:right; position:relative;  }
 #cart > .btn                            {   font-size:12px; line-height:18px;color:#FFF; }
 #cart.open > .btn                       {   background-image:none; background-color:#FFFFFF;
@@ -64,6 +71,17 @@ a.city.select           {   font-weight: bold;color: #FFFFFF; font-size: 12px;
                             -o-transition:.5s ease-in-out;
                             transition:.5s ease-in-out;cursor:pointer;display:none;float:right;
                             background:#fff;border-radius:50%;                                              }
+#sidebar-btn span       {   display:block;position:absolute;height:1px;width:24px;background:#222;border-radius:9px;opacity:1;left:13px;
+                            -webkit-transform:rotate(0deg);
+                            -moz-transform:rotate(0deg);
+                            -o-transform:rotate(0deg);transform:rotate(0deg);
+                            -webkit-transition:.25s ease-in-out;-moz-transition:.25s ease-in-out;
+                            -o-transition:.25s ease-in-out;
+                            transition:.25s ease-in-out;}
+#sidebar-btn span:nth-child(1){top:18px;}
+#sidebar-btn span:nth-child(2),
+#sidebar-btn span:nth-child(3){top:25px;}
+#sidebar-btn span:nth-child(4){top:32px;}                            
 /**/
 @keyframes          pulse           {   0%{transform:scale(0.9);opacity:1;}
                                         50%{transform:scale(1);opacity:1;}
@@ -139,6 +157,7 @@ a.city.select           {   font-size: 11px;    }
 }
 
 @media(max-width:1200px){
+#sidebar-btn{display:block;}
 .menu-right li > a:hover{   text-decoration:none; color:#fff!important; background:#6e419e;          }
 .nav > li > a           {   color:#222; padding:10px 15px; font-size:14px; font-family:'Ultima Pro';
                             text-transform:uppercase; font-weight:800;                               }
