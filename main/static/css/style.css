@@ -10,7 +10,7 @@ a                       {   color:#23a1d1; -webkit-transition:0.3s all; -moz-tra
 a:hover                 {   text-decoration:none;                                                       }
 a.city.select           {   font-weight: bold;color: #FFFFFF; font-size: 12px;
                             display: inline-block!important; padding: 12px 0; color: #222;              }
-.wrapper                {   position:relative; z-index:2;                                               }
+.wrapper                {   position:relative; z-index:5;                                               }
 .form-wrapper           {   margin:0;   }
 .htime                  {   padding:12px 0; display:block;font-size:13px; color:#222; font-weight:500;  }
 .htime i                {   font-size:20px; float:left; margin-right:5px;                                 }
@@ -62,7 +62,7 @@ a.city.select           {   font-weight: bold;color: #FFFFFF; font-size: 12px;
 #menu.fixed                             {   top:0; position:fixed; border-bottom:1px solid#ebeced;}
 .menu-nav                               {   display:block;      }
 .navbar-nav                             {   width:100%; }
-.navbar-nav>li{margin:4px 5px 5px 5px;}
+.navbar-nav>li                          {   margin:4px 5px 5px 5px; }
 .dropdown-menu                          {   border:none;margin:0;padding:0;right:0;left:auto;}
 .dropdown-menu .btn-link-drop           {   font-size:13px;color:#222;padding:8px 20px;display:block;white-space:nowrap;}
 .dropdown-menu .active .btn-link-drop   {   color:#FFF;}
@@ -189,55 +189,3 @@ textarea.form-control                           {   resize:vertical;    }
 @font-face{font-family:'Open Sans';font-style:normal;font-weight:600;src:local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url(https://fonts.gstatic.com/s/opensans/v16/mem5YaGs126MiZpBA-UNirkOXOhpOqc.woff2) format('woff2');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}
 @font-face{font-family:'Open Sans';font-style:normal;font-weight:600;src:local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url(https://fonts.gstatic.com/s/opensans/v16/mem5YaGs126MiZpBA-UNirkOUuhp.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
 /**/
-@media(max-width:1390px){
-    .htime                  {   font-size: 12px;    }
-    a.city.select           {   font-size: 12px;    }
-    #top-menu .menu-right a {   font-size: 12px;    }
-    #top-menu .menu-left>li {   margin-right:10px;  }
-    #top-menu .menu-right>li{   margin-left:10px;   }
-}
-
-@media(max-width:1300px){
-    .wrapper                {   padding-left:0;     }
-    .htime                  {   font-size: 11px;    }
-    a.city.select           {   font-size: 11px;    }
-    #top-menu .menu-right a {   font-size: 11px;    }
-    #top-menu a span        {   font-size: 15px;    }
-    .htime i                {   font-size: 15px;    }
-}
-
-@media(max-width:1200px){
-    #sidebar-btn{display:block;}
-    .menu-right li > a:hover{   text-decoration:none; color:#fff!important; background:#6e419e;          }
-    .nav > li > a           {   color:#222; padding:10px 15px; font-size:14px; font-family:'Ultima Pro';
-                                text-transform:uppercase; font-weight:800;                               }
-    .nav > li > a i.fa      {   color:#2aad6f; font-size:26px; margin-right:9px; display:inline-block;   }
-    .navbar-nav             {   margin:0; float:none;                                                    }
-    .navbar-nav>li          {   float:none;                                                              }
-    .htime                  {   padding:12px 0; display:block; font-size:16px;
-                                color:#222; font-weight:500; text-align:center;                          }
-    .htime i                {   display:none;                                                            }
-    #search                 {   width:515px;margin-right:20px;}
-    #search_advice_wrapper  {   /*top:auto!important;*/top:92px!important;position:fixed!important;bottom:83px;right:0;overflow:scroll;/*height:calc(100%);*/height:calc(78%);
-                                padding:0!important;margin:0!important;border-radius:0!important;}                       
-}
-
-@media(max-width:992px){
-    #search         {   width:300px;margin-right:0; }
-    #search button  {   top:27px;   }
-}
-
-@media(max-width:767px){
-    #search                                             {   position:fixed;bottom:0;left:0;margin:0;width:100%;padding:0;transition:0.3s all;z-index:999;   }
-    #search.open                                        {   /*bottom:49px;*/top:60px;   }
-    #search .form-control                               {   border-radius:0;    }
-    #search button                                      {   top:5px;    }
-    .menu-right>div, .menu-right>a,.menu-right>butto    {   position:relative; width:25%;                      }
-    #logo                                               {   height:60px;width:64%;                             }
-    .htime i                                            {   display:none;                                      }
-    .htime                                              {   padding:2px 0; display:block; font-size:16px;
-                                                            color:#222; font-weight:500; text-align:center;    }
-    #top-menu                                           {   display:none;                                      }
-    .card                                               {   padding:15px;margin-bottom:15px;    }
-    .card-info                                          {   }
-}

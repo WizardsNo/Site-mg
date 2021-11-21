@@ -1,19 +1,18 @@
 <!doctype html>
 {% load static %}
-<html lang="ru">
+<html dir="ltr" lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Главная страница</title>
-    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
-    <link rel="stylesheet" href="{% static 'css/bootstrap.css.map' %}">
-    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
-    <link media="screen"   rel="stylesheet" href="{% static 'css/bootstrap.min.css.map' %}">
-    <link type="text/css"  rel="stylesheet" media="screen" href="{% static 'owl.carousel.min.css' %}">
-    <link rel="stylesheet" href="{% static 'css/pe-icon-7-stroke.min.css' %}" >
-    <link rel="stylesheet" href="{% static 'css/stylesheet.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+    <link type="text/css" rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}" >
+    <link type="text/css" media="screen"  rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,900&subset=cyrillic" type='text/css' rel="stylesheet">
+    <link type="text/css" media="screen"  rel="stylesheet" href="{% static 'css/pe-icon-7-stroke.min.css' %}" >
+    <link media="screen"  rel="stylesheet" href="{% static 'css/stylesheet.css' %}">
 
 </head>
 <body class="common-home">
@@ -22,63 +21,121 @@
             <div class="container">
                 <div class="top-menu-wrapper">
                     <div id="selcity2">
-                        <div id="city-element" class="menu-left" style="tex-align:center;">
+        
+                        <div id="city_element" class="menu-left" style="text-align:center;">
                             <div id="city">
-                                <span class="pe-7s-map-marker"></span>
-                                Город:
-                                <a class="city select" href="#">типо адрес</a>
+                                <span class="pe-7s-map-marker"></span> Город: <a class="city select"
+                                    href="javascript:void(0);">Москва, улица Барклая, дом 6</a>
                             </div>
                         </div>
                     </div>
+        
                     <ul class="menu-right">
-                    <li>
-                        <div class="htime">
-                            "Самовывоз: "
-                            <i class="pe-7s-home"></i>
-                            <span class="hdate">Пн-Пт:</span>
-                            " 10:00-21:00 "
-                            <span class="hdate">Сб-Вс:</span>
-                            " 10:00-18:00 "
-                        </div>
-                    </li>
-                    <li>
-                       <div class="htime">
-                            "Колл-центер: "
-                            <i class="pe-7s-clock"></i>
-                            <span class="hdate">Пн-Пт:</span>
-                            " 9:00-21:00 "
-                            <span class="hdate">Сб-Вс:</span>
-                            " 9:00-20:00 "
-                        </div>
-                    </li>
-                    <li>
-                        <a href="tel:+7 495 662-77-77" onclick="window.dataLayer = window.dataLayer || [];dataLayer.push({'event':'call_button_click'});">
-                            <span class="pe-7s-call"></span>
-                            "+7 495 662-77-77"
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" onclick="order('','','callback');yaCounter1783105.reachGoal('callback');
-                           window.dataLayer = window.dataLayer || [];dataLayer.push({'EventCategory':'UX','EventAction':'callback','EventLabel':'show-form','event':'GAevent'});">
-                            <span class="pe-7s-headphones"></span>
-                            " обратный звонок"
-                        </a>
-                    </li>
+                        <li>
+                            <div class="htime">Самовывоз: <i class="pe-7s-home"></i> <span class="hdate">Пн-Пт:</span>
+                                10:00-21:00 <span class="hdate">Сб-Вс:</span> 10:00-18:00</div>
+                        </li>
+                        <li>
+                            <div class="htime">Колл-центр: <i class="pe-7s-clock"></i> <span class="hdate">Пн-Пт:</span>
+                                09:00-21:00 <span class="hdate">Сб-Вс:</span> 09:00-20:00</div>
+                        </li>
+                        <li><a href="tel:+78007700667"
+                                onclick="window.dataLayer = window.dataLayer || [];dataLayer.push({'event':'call_button_click'});"><span
+                                    class="pe-7s-call"></span>8 (800) 770-06-67</a></li>
+                        <li><a href="#"
+                                onclick="order('','','callback');yaCounter1783105.reachGoal('callback'); window.dataLayer = window.dataLayer || [];dataLayer.push({'EventCategory':'UX','EventAction':'callback','EventLabel':'show-form','event':'GAevent'});"><span
+                                    class="pe-7s-headphones"></span> обратный звонок</a>
+                        </li>
                     </ul>
+        
+        
                 </div>
             </div>
         </div>
         <nav id="menu" class="navbar">
             <div class="container">
-                <div class="menu-nav">
+                <div class="nav">
                     <div id="logo">
-                        <div id="sidebar-btn">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                            <span class="bi bi-sliders" style="font-size:2.50rem;"></span>
+                        </button>
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                            <div class="offcanvas-header">
+                              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                  <a class="nav-link active" aria-current="page" href="#">Главная</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#">Ссылка</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                  <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Выпадающий список
+                                  </a>
+                                  <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Действие</a></li>
+                                    <li><a class="dropdown-item" href="#">Другое действие</a></li>
+                                    <li>
+                                      <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
+                                  </ul>
+                                </li>
+                              </ul>
+                              <form class="d-flex">
+                                <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Поиск">
+                                <button class="btn btn-outline-success" type="submit">Поиск</button>
+                              </form>
+                            </div>
                         </div>
-                        <a href="{% static 'img/Clip.png' %}"><img src="{% static 'img/Clip.png' %}" alt="{% static 'img/Clip.png' %}" title="Clip.png" class="img-responsive"></a>
+                        <a href="/">
+                            <img src="{% static 'img/Clipp.png' %}" alt="Clip" title="Clip" class="img-responsive">
+                        </a>
+                    </div>
+                    <div id="menu_bottom">
+                        <div class="menu-right">
+                            <div id="search">
+                                <form class="form-wrapper" action="/search.php" method="GET" id="">
+                                    <input type="text" name="search_1" id="" value="" placeholder="Поиск товара по каталогу" autocomplete="off" class="form-control me2">
+                                    <button type="submit">
+                                        <span class="pe-7s-search"></span>
+                                    </button>
+                                </form>
+                                <div id="search_advice_wrapper"></div>
+                            </div>
+                            <div class="dropdown">
+                                <button class="icon-btn-menu dropdown-toggle" id="lk" data-toggle="dropdown">
+                                    <span class="pe-7s-user pe-fix"></span>
+                                    <div class="text">Личный кабинет</div>
+                                </button>
+                                <div class="lk dropdown-menu" style="">
+                                    <ul class="list-unstyled">
+                                        <!--noindex-->
+                                        <li><a class="btn-link-drop" hashstring="f34bb62f734d1cecaa4de6a8b8efab52"
+                                               hashtype="href" href="/account/login">Авторизация</a></li>
+                                        <li><a class="btn-link-drop" hashstring="f34bb62f734d1cecaa4de6a8b8efab522"
+                                               hashtype="href" href="/account/register">Регистрация</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <button class="icon-btn-menu d-lg-none d-md-none d-sm-none" id="search-btn-mobile">
+                                <span class="pe-7s-search pe-fix"></span>
+                            </button>
+                            <a href="/" class="icon-btn-menu">
+                                <span class="pe-7s-repeat pe-fix"></span>
+                                <i id="compare-total" class="count">0</i>
+                                <div class="text">Сравнение</div>
+                            </a>
+                            <a href="/" id="wishlist-total" class="icon-btn-menu">
+                                <span class="pe-7s-like pe-fix"></span>
+                                <i class="count">0</i>
+                                <div class="text">Коллекция</div>
+                            </a>
+                        </div>
                     </div>
                     <div id="cart">
                         <button type="button" data-toggle="dropdown" class="icon-btn-menu dropdown-toggle">
@@ -97,49 +154,15 @@
                             </li>
                         </ul>
                     </div>
-                    <div id="menu_bottom">
-                        <div class="menu-right">
-                            <div class="dropdown">
-                                <button class="icon-btn-menu dropdown-toggle" id="lk" data-toggle="dropdown">
-                                    <span class="pe-7s-user pe-fix"></span>
-                                    <div class="text">Личный кабинет</div>
-                                </button>
-                                <div class="lk dropdown-menu" style="">
-                                    <ul class="list-unstyled">
-                                        <!--noindex-->
-                                        <li><a class="btn-link-drop" hashstring="f34bb62f734d1cecaa4de6a8b8efab52"
-                                               hashtype="href" href="/account/login">Авторизация</a></li>
-                                        <li><a class="btn-link-drop" hashstring="f34bb62f734d1cecaa4de6a8b8efab522"
-                                               hashtype="href" href="/account/register">Регистрация</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <button class="icon-btn-menu d-xl-none d-xxl-none" id="search-btn-mobile">
-                                <span class="pe-7s-search pe-fix"></span>
-                            </button>
-                            <a href="/compare" class="icon-btn-menu">
-                                <span class="pe-7s-repeat pe-fix"></span>
-                                <i id="compare-total" class="count">0</i>
-                                <div class="text">Сравнение</div>
-                            </a>
-                            <a href="/account/wishlist" id="wishlist-total" class="icon-btn-menu">
-                                <span class="pe-7s-like pe-fix"></span>
-                                <i class="count">0</i>
-                                <div class="text">Коллекция</div>
-                            </a>
-                        </div>
-                        <div id="search" class>
-                            <form class="form-wrapper" action="/search.php" method="GET" id="search_form_new">
-                                <input type="text" name="search_1" id="search_box" value=""
-                                       placeholder="Поиск товара по каталогу" autocomplete="off" class="form-control">
-                                <button type="submit"><span class="pe-7s-search"></span></button>
-                            </form>
-                            <div id="search_advice_wrapper"></div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </nav>
+        <style>
+            .MenuTopBlock{border-bottom:1px solid rgb(216, 216, 216);background:rgb(255, 255, 255);justify-content:space-around;min-height:50px;-webkit-box-align:stretch;align-items:stretch;display:flex;border-top:1px solid rgb(216, 216, 216);}
+            .menubleft{text-decoration:none;color:rgb(87, 87, 87);width: 100%;display:flex;-webkit-box-pack:center;justify-content:center;border-right:1px solid rgb(216, 216, 216);padding-right: 2px;}
+            .menubright{text-decoration:none;color:rgb(87, 87, 87);width: 100%;display:flex;-webkit-box-pack:center;justify-content:center;border-right:0px none;cursor:pointer;}
+        </style>
     </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 </body>
 </html>
