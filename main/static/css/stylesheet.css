@@ -53,9 +53,9 @@ div.required .control-label:before{content:'* ';color:#F00;font-weight:bold;}
 .htime i{font-size:20px;float:left;margin-right:5px;}
 #top-menu{margin-bottom:70px;background:#fbfbfb;position:relative;z-index:1002;border-bottom:1px solid#ebeced;}
 #top-menu .dropdown-menu{margin:0;border-radius:0;border:none;padding:0;-webkit-box-shadow:0 4px 6px rgba(0, 0, 0, 0.05);box-shadow:0 4px 6px rgba(0, 0, 0, 0.05);}
-.top-menu-wrapper{display:flex;justify-content:space-between;}
+.top-menu-wrapper{display:flex;justify-content:center;}
 #top-menu .menu-right a{padding:12px 0;display:block;font-size:13px;color:#222;font-weight:500;}
-#top-menu a:hover{color:#8a8a8a;}
+#top-menu a:hover{color:#be358c;}
 #top-menu a span{font-size:20px;float:left;margin-right:5px;}
 #top-menu .menu-left,
 #top-menu .menu-right{list-style:none;padding:0;margin:0;}
@@ -115,8 +115,8 @@ div.required .control-label:before{content:'* ';color:#F00;font-weight:bold;}
 .noa {font-size: 13px;}
 .icon-btn-menu{font-size:26px;color:#222;position:relative;display:flex;float:right;height:70px;padding:5px 15px;background:none;border:none;align-items:center;border-left:1px solid#ebeced;text-decoration:none;}
 .icon-btn-menu .text{font-size:13px;margin-left:14px;color: #222;font-weight: 500;}
-.icon-btn-menu .count{background:#2aad6f;width:18px;height:18px;display:block;border-radius:50%;color:#fff;font-size:10px;text-align:center;line-height:20px;position:absolute;top:17px;left:35px;font-style:inherit;font-family: 'Montserrat', sans-serif;}
-.icon-btn-menu:hover{background:#fbfbfb;}
+.icon-btn-menu .count{background:#be358c;width:18px;height:18px;display:block;border-radius:50%;color:#fff;font-size:10px;text-align:center;line-height:20px;position:absolute;top:17px;left:35px;font-style:inherit;font-family: 'Montserrat', sans-serif;}
+.icon-btn-menu:hover{background:#d1b46569; color: #be358c;}
 #content{min-height:600px;}
 .service-wrapper{background:#f5f0f0;position:relative;overflow:hidden;margin-top:20px;margin-bottom:30px;}
 .service-item{padding:30px 0px 30px 80px;position:relative;}
@@ -1344,9 +1344,10 @@ table.excel3 caption{text-align:left;color:#333333;font-size:22px;}
 .banner-body .main-btn{width:150px;margin:15px auto 0;display:block;}
 #lightboxOverlay{position:fixed !important;top:0;left:0;height:100% !important;width:100% !important;}
 #lightbox{position:fixed !important;top:50% !important;transform:translateY(-50%);}
-@media(max-width:1390px){
+@media(min-width:1200px){
 .htime{font-size: 12px;}
 a.city.select {font-size: 12px;}
+#top-menu .container {max-width: 1360px;}
 #top-menu .menu-right a {font-size: 12px;}
 #top-menu .menu-left>li{margin-right:10px;}
 #top-menu .menu-right>li{margin-left:10px;}
