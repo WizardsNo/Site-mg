@@ -31,6 +31,6 @@ services:
        #MYSQL_PASSWORD: 'password'
        #MYSQL_ROOT_PASSWORD: 'password'
        
-  volumes:
+  #volumes:
     #mysql_data:
-    static_data:
+    #static_data:
