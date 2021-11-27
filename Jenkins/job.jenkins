@@ -1,0 +1,25 @@
+#!groovy
+// подключаеться к удаленому серверру по ssh и выпонляет 2 команды shell
+properties([disableConcurrentBuilds()]) //запретить одновременые сборки
+
+pipeline { //main
+    agent { 
+        label 'master'
+        }
+    options {
+        buildDiscarder(logRotator(numToKeepStr: '10', artifactNumToKeepStr: '10')) // сохрани логи последних 10 сборок и 10 артифакты 10 сборок 
+        timestamps()  //временые отметки 
+    }
+    stages {
+        stage("First step") {
+            steps {
+                sh 'ssh root@ser \'hostname\'' //  выполни в shell команду hostname
+            }
+        }
+        stage("Second step") {
+            steps {
+                sh 'ssh root@ser \'uptime\''//  выполни в shell команду hostname
+            }
+        }
+    }
+}
