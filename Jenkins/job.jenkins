@@ -18,7 +18,7 @@ pipeline { //main
         }
         stage("Second step") {
             steps {
-                sh 'ssh root@ser \'uptime\''//  выполни в shell команду hostname
+                sh 'ssh root@ser \'uptime\''//  выполни в shell команду hostname //f
             }
         }
     }
