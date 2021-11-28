@@ -7,5 +7,5 @@ ENV PYTHONDONTWRITEBYTECODE=1 \
         
 COPY . .
 
-RUN apk add --update --no-cache --virtual .tmp-bild-deps\
-    pip install --no-cahe-dir -r requirements.txt
+RUN apk add --update --no-cache --virtual .tmp-build-deps && \
+    pip install --no-cache-dir -r requirements.txt
