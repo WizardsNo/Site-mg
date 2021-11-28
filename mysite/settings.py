@@ -11,6 +11,11 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 from pathlib import Path
+#--------------------------------------------------------------
+#import os
+#import environ         #переменые окружения для баз данных
+#env = environ.Env()
+#--------------------------------------------------------------
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -29,7 +34,7 @@ SECRET_KEY = 'django-insecure-e2yx_0xymc9pxiro0t&se+w5p_jzqvota3t5_#m%j8(kr2+v*d
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [] ##параметр для имя домена
+ALLOWED_HOSTS = [] #["имя домена .ру",] #параметр для имя домена
 
 
 # Application definition
@@ -80,7 +85,7 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
+        'ENGINE': 'django.db.backends.sqlite3', #'default': env.db(), #обьявление переменной для баз даных
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
