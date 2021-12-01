@@ -2,11 +2,12 @@ version: '3.9'
 
 services:
   django:
-    build: ./project
+    container_name: django(DN)
+    build: ./project/docker # путь к dockerfaile
     command: sh -c "gunicorn --bind 0.0.0.0:8000 app.wsgi"
     volumes:
-      - ./project:/project
-      - static_data:/project/static
+      - ./project:/project/main
+      - static_data:/project/main/static
     expose:
       - 8000
     #environment:
@@ -14,6 +15,7 @@ services:
       #- DEBUG=1
   
   nginx:
+    container_name: nginx(DN)
     image: nginx:1.19.8-alpine
     depends_on: #запуск после Django
       - django
