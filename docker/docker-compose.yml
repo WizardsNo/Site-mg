@@ -3,11 +3,11 @@ version: '3.9'
 services:
   django:
     container_name: django(DN)
-    build: ./project/docker # путь к dockerfaile
+    build: ./SITE-MG/docker # путь к dockerfaile
     command: sh -c "gunicorn --bind 0.0.0.0:8000 app.wsgi"
     volumes:
-      - ./project:/project/main
-      - static_data:/project/main/static
+      - ./SITE-MG:/SITE-MG/main
+      - static_data:/SITE-MG/main/static
     expose:
       - 8000
     #environment:
@@ -26,6 +26,7 @@ services:
       - ./nginx-conf.d:/etc/nginx/conf.d
       
   #db:                           # Postgresql
+    #container_name: Postgresql(DNP)
     #image: postgres:13-alpine
     #volumes:
       #- pg_data:/var/lib/postgresql/data
@@ -37,6 +38,7 @@ services:
       #- POSTGRES_DB="имя бд"
 
   #db:                           # Mysql
+    #container_name: Mysql(DNM) 
     #image: mysql:5.7:13-alpine
     #volumes:
     #expose:
