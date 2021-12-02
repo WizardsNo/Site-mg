@@ -1,61 +1,77 @@
 Карта
 =====
-### { > } - dir; { # } - file
+### { ▽ } - dir; { # } - file
 ```
-> Docker ――>\
-             |# docker-compose.yml
-             |# Dockerfaile
-             |# nginx.conf
-             |# requirements.txt
-> Jenkins ―>\
-             |――――――――――――――――>\
-             |------------------|# job.jenkins
-> main ――――>\
-             |―> _pycache_ _――>\
-             |------------------|# __init__.cpython-39.pyc
-             |                  |# admin.cpython-39.pyc
-             |                  |# apps.cpython-39.pyc
-             |                  |# models.cpython-39.pyc
-             |                  |# urls.cpython-39.pyc
-             |                  |# views.cpython-39.pyc
-             |                  |
-             \―> migrations ――>\
-             |------------------|―> _pycache_ ―――――――――――>\
-             |                  |--------------------------|#__init__.cpython-39.pyc
-             |                  |# _init_.py               |
-             \―> static ――――――>\                           |
-             |------------------|―> css ―――――――――――――――――>\
-             |                  |--------------------------|# bootstrap.css.map
-             |                  |                          |# bootstrap.min.css
-             |                  |                          |# font-awesome.min.css
-             |                  |                          |# owl.carousel.min.css
-             |                  |                          |# pe-icon-7-stroke.min.css
-             |                  |                          |# style.css
-             |                  |                          |# stylesheet.css
-             |                  |―> fonts ―――――――――――――――>\
-             |                  |--------------------------|# Pe-icon-7-stroke.woff
-             |                  |―> img ―――――――――――――――――>\
-             |                  |--------------------------|# Clip.png
-             |                  |                          |# Lotus.png
-             |                  |―> js ――――――――――――――――――>\
-             |                  |--------------------------|# bootstrap.min.js  
-             \―> templates ―――>\                           |
-             |------------------|―> main ――――――――――――――――>\
-             |# _init_.py       |--------------------------|# index.html
-             |# admin.py        |
-             |# apps.py         |
-             |# models.py       |
-             |# tests.py        |
-             |# urls.py         |
-             |# views.py        |                                              
-> mysite ――>\                   |
-             |―> _pycache_ ―――>\
-             |------------------|# __init__.cpython-39.pyc
-             |# __init__.py     |# settings.cpython-39.pyc
-             |# asgi.py         |# urls.cpython-39.pyc
-             |# settings.py     |# wsgi.cpython-39.pyc
-             |# urls.py         |
-             |# wsgi.py         |
+▽ docker 
+├───# docker-compose.yml
+├───# dockerfaile
+└───# requirements.txt
+
+▽ Jenkins
+└───# job.jenkins
+
+▽ main 
+├───▽ _pycache_ 
+│   ├───# __init__.cpython-39.pyc
+│   ├───# admin.cpython-39.pyc
+│   ├───# apps.cpython-39.pyc
+│   ├───# models.cpython-39.pyc
+│   ├───# urls.cpython-39.pyc
+│   └───# views.cpython-39.pyc
+│
+├───▽ migrations
+│   ├───▽ _pycache_
+│   │   └───#__init__.cpython-39.pyc
+│   └───# _init_.py
+│              
+├───▽ static                          |
+│   ├───▽ css
+│   │   ├───# bootstrap.css.map
+│   │   ├───# bootstrap.min.css
+│   │   ├───# font-awesome.min.css
+│   │   ├───# owl.carousel.min.css
+│   │   ├───# pe-icon-7-stroke.min.css
+│   │   ├───# style.css
+│   │   └───# stylesheet.css
+│   │
+│   ├───▽ fonts
+│   │   └───# Pe-icon-7-stroke.woff
+│   │
+│   ├───▽ img
+│   │   ├───# Clip.png
+│   │   └───# Lotus.png
+│   │
+│   ├───▽ js
+│   │   └───# bootstrap.min.js 
+│   │ 
+│   └───▽ templates 
+│       └───▽ main
+│           └───# index.html
+│
+├───# _init_.py       
+├───# admin.py        
+├───# apps.py         
+├───# models.py       
+├───# tests.py        
+├───# urls.py         
+└───# views.py
+
+▽ mysite 
+├───▽ _pycache_
+│   ├───# __init__.cpython-39.pyc
+│   ├───# settings.cpython-39.pyc
+│   ├───# urls.cpython-39.pyc
+│   └───# wsgi.cpython-39.pyc
+│
+├───# __init__.py     
+├───# asgi.py         
+├───# settings.py     
+├───# urls.py         
+└───# wsgi.py
+
+▽ nginx
+└───# nginx.conf
+
 # db.sqlite3
 # manage.py
 ```
