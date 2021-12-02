@@ -16,6 +16,7 @@ services:
   
   nginx:
     container_name: nginx(DN)
+    #restart: on-failure   #перезапуск контейнера после критического сбоя
     image: nginx:1.19.8-alpine
     depends_on: #запуск после Django
       - django
@@ -27,6 +28,7 @@ services:
       
   #db:                           # Postgresql
     #container_name: Postgresql(DNP)
+    #restart: always #перезапуск контейнера после критического сбоя
     #image: postgres:13-alpine
     #volumes:
       #- pg_data:/var/lib/postgresql/data
@@ -38,9 +40,11 @@ services:
       #- POSTGRES_DB="имя бд"
 
   #db:                           # Mysql
-    #container_name: Mysql(DNM) 
+    #container_name: Mysql(DNM)
+    #restart: always  #перезапуск контейнера после критического сбоя
     #image: mysql:5.7:13-alpine
     #volumes:
+      #- mysql_data:/var/lib/mysql_data/data
     #expose:
       #- 5432
     #environment:
@@ -52,4 +56,4 @@ services:
 volumes:
   #pg_data:     # Postgresql
   #mysql_data:  # Mysql
-  static_data:  #1
+  static_data:  #
