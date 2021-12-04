@@ -80,7 +80,7 @@ ____
 |-------------------------------:|:-------------------------|:------------------|:-------------------------:|
 | Docker\                        | docker-compose.yml       | Docker            |
 | Docker\                        | Dockerfaile              | Docker            |
-| Docker\                        | nginx.conf               | Docker            |
+| nginx\                         | nginx.conf               | Docker            |
 | Docker\                        | requirements.txt         | Docker            |
 | Jenkins\                       | job.jenkins              | jenkins           |
 | main\ \__pycache__\            | \__init__.cpython-39.pyc | Django            |
