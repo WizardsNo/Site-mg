@@ -13,7 +13,7 @@ services:
     #environment:
       #- DATABASE_URL=postgresql://"имя пользователя":"пароль":5432/"имя бд" # настройки бд
       #- DEBUG=1
-  
+
   nginx:
     container_name: nginx(DN)
     #restart: on-failure   #перезапуск контейнера после критического сбоя
@@ -25,7 +25,7 @@ services:
     volumes:
       - static_data:/var/www/html/static
       - ./nginx-conf.d:/etc/nginx/conf.d
-      
+
   #db:                           # Postgresql
     #container_name: Postgresql(DNP)
     #restart: always #перезапуск контейнера после критического сбоя
