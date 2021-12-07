@@ -2,11 +2,11 @@ version: '3.9'
 
 services:
   django:
-    container_name: django(DN)
-    build: ./SITE-MG/docker # путь к dockerfaile
+    container_name: django
+    build: .
     command: sh -c "gunicorn --bind 0.0.0.0:8000 app.wsgi"
     volumes:
-      - ./SITE-MG:/SITE-MG/main
+      - ./SITE-MG:/SITE-MG/
       - static_data:/SITE-MG/main/static
     expose:
       - 8000
@@ -15,7 +15,7 @@ services:
       #- DEBUG=1
 
   nginx:
-    container_name: nginx(DN)
+    container_name: nginx
     #restart: on-failure   #перезапуск контейнера после критического сбоя
     image: nginx:1.19.8-alpine
     depends_on: #запуск после Django
@@ -27,7 +27,7 @@ services:
       - ./nginx-conf.d:/etc/nginx/conf.d
 
   #db:                           # Postgresql
-    #container_name: Postgresql(DNP)
+    #container_name: Postgresql
     #restart: always #перезапуск контейнера после критического сбоя
     #image: postgres:13-alpine
     #volumes:
@@ -40,7 +40,7 @@ services:
       #- POSTGRES_DB="имя бд"
 
   #db:                           # Mysql
-    #container_name: Mysql(DNM)
+    #container_name: Mysql
     #restart: always  #перезапуск контейнера после критического сбоя
     #image: mysql:5.7:13-alpine
     #volumes:

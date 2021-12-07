@@ -10,4 +10,4 @@ COPY . .
 RUN apk add --update --no-cache --virtual .tmp-build-deps && \
         #cc libc-dev linux-headers postgresql-dev && \
         #mysql-server && \
-    pip install --no-cache-dir -r requirements.tx
+    pip install --no-cache-dir -r requirements.txt
