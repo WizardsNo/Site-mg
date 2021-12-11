@@ -4,7 +4,7 @@ services:
   django:
     container_name: django
     build: .
-    command: sh -c "gunicorn --bind 0.0.0.0:8000 app.wsgi"
+    command: sh -c "gunicorn --bind 0.0.0.0:8000 app.wsgi" #вкутриний ipv4
     volumes:
       - ./SITE-MG:/SITE-MG/
       - static_data:/SITE-MG/main/static
