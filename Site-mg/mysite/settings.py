@@ -11,8 +11,8 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 from pathlib import Path
-#--------------------------------------------------------------
 import os
+#--------------------------------------------------------------
 #import environ         #переменые окружения для баз данных
 #env = environ.Env()
 #--------------------------------------------------------------
@@ -37,7 +37,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 #DEBUG = True
 DEBUG = os.getenv('DEBUG')
 
-ALLOWED_HOSTS = ['51.250.4.143'] #["testnnn.ru",] #параметр для имя домена
+ALLOWED_HOSTS = ['*'] #["testnnn.ru",] #параметр для имя домена
 
 
 # Application definition
@@ -89,7 +89,7 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3', #'default': env.db(), #обьявление переменной для баз даных
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'), #'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
