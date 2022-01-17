@@ -160,11 +160,11 @@
         <div class="sidebar" id="sidebar">
             <div class="container">
                 <ul class="nav navbar-nav">
-                    <li  class="category ">
+                    <li id="toggle1" class="category">
+                        <div class="overlay"></div>
                         <button type="button" class="btn btn-danger dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">
                             Действие
                         </button>
-                        <div class="overlay"></div>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Другое действие</a></li>
                             <li><a class="dropdown-item" href="#">Другое действие</a></li>
@@ -185,5 +185,13 @@
         </div>
     </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+<script>
+    var tabs = document.getElementById('toggle1');
+    tabs.addEventListener("click", function(ev) {
+      var hideElement = document.getElementsByClassName('category');
+      var showElemtn = document.querySelectorAll('li.category' + ev.target.id + '')[0];
+      showElemtn.classList.toggle("active");
+    });
+</script>
 </body>
 </html>

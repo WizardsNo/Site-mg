@@ -72,8 +72,23 @@ a:focus, button:focus                   {   outline:0!important;  }
 #logo a                                         {   margin:4px auto 0;  }
 #logo img                                       {   height:50px;    }
 #sidebar                                        {   background-color: #6e419e; z-index: 999;transition: all .3s ease; position: relative; }
-.category button[aria-expanded="true"] + .overlay{  background: #000; position: fixed; top: 0; left: 0; height: 100%; width: 100%; opacity: .3; margin-top: 7em; }
+.category.active > .overlay {  background: #000; position: fixed; top: 0; left: 0; height: 100%; width: 100%; opacity: .3; margin-top: 10.6em; }
 #sidebar .container ul.navbar                   {   padding-left: 0rem; }
+.category .btn-danger {
+    background-color:rgba(0, 0, 0, 0);
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    user-select: none;
+    padding: .5em 2em;
+    outline: none;
+    border: 2px solid;
+    border-radius: 1px;
+    transition: 0.2s;
+  } 
+  .category .btn-danger:hover { background: rgba(255, 255, 255, 0); }
+  .category .btn-danger:active { background: rgba(255, 0, 0, 0); }
+  .category .btn-danger:focus { box-shadow: 0 0 0 0}
 .navbar-nav                                     {   width:100%; display: flex; flex-direction: row; flex-wrap: nowrap; align-content: space-between; align-items: center; }
 .navbar-nav > li                                {   margin:1px 5px 1px 5px; float: left; position: relative; display: flex; }
 .navbar-nav > li > a                            {   color: #fff; padding: 18px 5px; min-height: 15px; font-size: 13px; font-weight: 500; position: relative; }
