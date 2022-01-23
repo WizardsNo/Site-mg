@@ -2,14 +2,6 @@
 =====
 ### { ▽ } - dir; { # } - file
 ```
-▽ docker 
-├───# docker-compose.yml
-├───# dockerfaile
-└───# requirements.txt
-
-▽ Jenkins
-└───# job.jenkins
-
 ▽ main 
 ├───▽ _pycache_ 
 │   ├───# __init__.cpython-39.pyc
@@ -69,20 +61,12 @@
 ├───# urls.py         
 └───# wsgi.py
 
-▽ nginx
-└───# nginx.conf
-
 # db.sqlite3
 # manage.py
 ```
 ____
 | Деректория                     | Файлы                    | Принадлежность    | Описание                  |
 |-------------------------------:|:-------------------------|:------------------|:-------------------------:|
-| Docker\                        | docker-compose.yml       | Docker            |
-| Docker\                        | Dockerfaile              | Docker            |
-| nginx\                         | nginx.conf               | Docker            |
-| Docker\                        | requirements.txt         | Docker            |
-| Jenkins\                       | job.jenkins              | jenkins           |
 | main\ \__pycache__\            | \__init__.cpython-39.pyc | Django            |
 | main\ \__pycache__\            | admin.cpython-39.pyc     | Django            |
 | main\ \__pycache__\            | apps.cpython-39.pyc      | Django            |
